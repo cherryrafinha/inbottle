@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta name="viewport" content="with=deivce-width, initial-scale=1.0">
+    <title> In Bottle website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logotipo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="requests.html">REQUESTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1> Requests </h1>
+    </section>
+
+     <!------Course----->
+
+     <section class="course">
+        <h1> Our product </h1>
+        <p> About the terrarium </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3> Price </h3>
+                <p> It will be R$35.00 in the large size  </p>
+            </div>
+            <div class="course-col">
+                <h3> Can be customized with a character </h3>
+                <p> You can choose one of the studio ghibli characters </p>
+            </div>
+            <div class="course-col">
+                <h3> Themes </h3>
+                <p> There will be three themes initially </p>
+            </div>
+        </div>
+</section>
+
+     <!----campus---->
+
+     <section class="campus">
+        <h1> Types of characters </h1>
+        <p> Some characters you can choose </p>
+
+        <div class="row">
+                <div class="campus-col">
+                    <img src="imagens/totoro3.avif">
+                <div class="layer">
+                    <h3> Totoro </h3>
+                </div>
+                </div>
+                <div class="campus-col">
+                    <img src="imagens/ponyo4.jpg">
+                <div class="layer">
+                    <h3> Ponyo </h3>
+                </div>
+                </div>
+                <div class="campus-col">
+                    <img src="imagens/kiki2.webp">
+                <div class="layer">
+                    <h3> Kiki </h3>
+                </div>
+                </div>
+        </div>
+</section>
+
+
+    <!------Footer----->
+
+    <section class="footer">
+        <h4> About Us </h4>
+        <p> In bottle is a sustainable company, which seeks to incorporate green in nature in our daily lives and also care for the environment </p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <p> Made with <i class="fa-regular fa-heart"></i> by Rafonha </p>
+    </section>
+
+    <!-----JavaScript For Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right= "0";
+        }
+        function hideMenu() {
+            navLinks.style.right= "-200px";
+        }
+    </script>
+</body>
+</html>
